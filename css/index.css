@@ -1,0 +1,101 @@
+@charset "UTF-8";    /* 文字コードの指定 */
+
+@import 'https://fonts.googleapis.com/css?family=Abel';    /* Google Fonts用のCSSを読み込み */
+
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    font-family: '游ゴシック', YuGothic, 'メイリオ', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    letter-spacing: .1em;
+    color: #4c4c4c;
+}
+
+.top-image {
+  background-image: url("../images/yakei.jpg");
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+#text
+{  
+    width: 100%;
+    background-color: #CEE3F6;
+}
+
+#text h1 {
+    color: #424242;
+    text-align: center;
+    font-size: 30px;
+    padding:50px;
+}
+
+.container {
+    background-color: #F5DA81;
+
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.text-box {
+   
+    background-color: #E1F5A9;
+    margin: 20px;
+    flex: 1;
+  }
+  
+.text-box h2
+{
+    text-align: center;
+    background-color: #F6CEF5;
+    display: block;
+    clear: both;
+    font-size: 30px;
+    height: 50px;
+}
+
+.text-box p
+{
+    font-size: 30px;
+    height: 300px;
+    text-align: center;
+    line-height: 270px;
+    
+}
+
+.button {
+    color: #ffffff;
+    border-radius: 4px;
+    background-color: #848484;
+    margin: 10px auto 10px;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    line-height:35px;
+}
+
+footer p {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px auto 10px;
+}
+
+
+
+
+@media screen and (max-width:768px){
+  .top-image {
+      height: 250px;
+  }
+  .container {
+      flex-direction: column;
+  }
+}
